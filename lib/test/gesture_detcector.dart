@@ -21,6 +21,7 @@ class _TestGestureDetectorState extends State<TestGestureDetector> {
       },
       child: Container(
         color: abd?Colors.orange:Colors.blue,
+        child: Text("test"),
       ),
     );
   }
