@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:new_design/icons/diamond_icons.dart';
-import 'home_page.dart';
+import 'package:new_design/screens/widgets/drawer.dart';
+import '../home/view/home_page.dart';
 import 'izbrannoy_page.dart';
 import 'uslugiPage.dart';
 class MyStatefulWidget extends StatefulWidget {
@@ -29,8 +30,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return SafeArea(
       child : Scaffold(
+        endDrawer: CustomDrawer(size: size,),
         body: Center(
           child: _widgetOptions.elementAt(_selectedIndex),
         ),
