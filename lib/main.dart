@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:new_design/screens/navigationBar.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:new_design/test/custom_clip_path.dart';
 
 import 'home/bloc/home_bloc.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => HomeBloc(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: MyStatefulWidget(),
+        home: CustomClipPath(),
       ),
     );
   }

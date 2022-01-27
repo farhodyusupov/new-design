@@ -23,6 +23,7 @@ dev_dependencies:
   chart_sparkline: ^1.0.8
   flutter_bloc: ^8.0.1
   intl: ^0.17.0
+  flutter_custom_clippers: ^2.0.0
 
     #UI
   flutter_svg: ^1.0.0
